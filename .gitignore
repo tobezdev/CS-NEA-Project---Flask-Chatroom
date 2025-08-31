@@ -179,3 +179,12 @@ cython_debug/
 #  refer to https://docs.cursor.com/context/ignore-files
 .cursorignore
 .cursorindexingignore
+
+# Python virtual environment (pyvenv)
+pyvenv.cfg
+Include/
+Lib/
+Scripts/
+
+# Visual Studio Code
+.vscode/*
