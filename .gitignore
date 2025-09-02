@@ -188,3 +188,7 @@ Scripts/
 
 # Visual Studio Code
 .vscode/*
+
+# Database files
+*.db
+

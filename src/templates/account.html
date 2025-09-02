@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Account Management</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #f4f4f4; }
+        .account-container { max-width: 400px; margin: 40px auto; background: #fff; padding: 20px; border-radius: 8px; }
+        .account-container h2 { margin-bottom: 20px; }
+        .account-container label { display: block; margin-top: 10px; }
+        .account-container input, .account-container textarea { width: 100%; padding: 8px; margin-top: 4px; border: 1px solid #ccc; border-radius: 4px; }
+        .account-container button { margin-top: 16px; padding: 8px 16px; border: none; background: #007bff; color: #fff; border-radius: 4px; cursor: pointer; }
+        .account-container button:hover { background: #0056b3; }
+    </style>
+</head>
+<body>
+    <div class="account-container">
+        <h2>Account Management</h2>
+        <form method="POST" action="/account">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required>
+            <label for="displayname">Display Name</label>
+            <input type="text" id="displayname" name="displayname">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            <label for="bio">Bio</label>
+            <textarea id="bio" name="bio" rows="3"></textarea>
+            <label for="profile_image">Profile Image URL</label>
+            <input type="text" id="profile_image" name="profile_image">
+            <button type="submit">Update Account</button>
+        </form>
+        <div style="margin-top:10px;">
+            <a href="/">Back to Chatroom</a>
+        </div>
+    </div>
+</body>
+</html>

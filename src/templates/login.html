@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #f4f4f4; }
+        .login-container { max-width: 400px; margin: 40px auto; background: #fff; padding: 20px; border-radius: 8px; }
+        .login-container h2 { margin-bottom: 20px; }
+        .login-container label { display: block; margin-top: 10px; }
+        .login-container input { width: 100%; padding: 8px; margin-top: 4px; border: 1px solid #ccc; border-radius: 4px; }
+        .login-container button { margin-top: 16px; padding: 8px 16px; border: none; background: #007bff; color: #fff; border-radius: 4px; cursor: pointer; }
+        .login-container button:hover { background: #0056b3; }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form method="POST" action="/login">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Login</button>
+        </form>
+        <div style="margin-top:10px;">
+            <a href="/register">Register</a>
+        </div>
+    </div>
+</body>
+</html>

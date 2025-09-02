@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flask Chatroom</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #f4f4f4; }
+        .chat-container { max-width: 600px; margin: 40px auto; background: #fff; padding: 20px; border-radius: 8px; }
+        .messages { height: 300px; overflow-y: auto; border: 1px solid #ddd; padding: 10px; margin-bottom: 10px; background: #fafafa; }
+        .input-row { display: flex; }
+        .input-row input[type=text] { flex: 1; padding: 8px; border: 1px solid #ccc; border-radius: 4px; }
+        .input-row button { padding: 8px 16px; margin-left: 8px; border: none; background: #007bff; color: #fff; border-radius: 4px; cursor: pointer; }
+        .input-row button:hover { background: #0056b3; }
+    </style>
+</head>
+<body>
+    <div class="chat-container">
+        <h2>Flask Chatroom</h2>
+        <div class="messages" id="messages">
+            <!-- Messages will be rendered here -->
+        </div>
+        <form class="input-row" method="POST" action="/send">
+            <input type="text" name="message" placeholder="Type your message or command..." required>
+            <button type="submit">Send</button>
+        </form>
+        <div style="margin-top:10px;">
+            <a href="/account">Account</a>
+        </div>
+    </div>
+</body>
+</html>

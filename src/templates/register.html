@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #f4f4f4; }
+        .register-container { max-width: 400px; margin: 40px auto; background: #fff; padding: 20px; border-radius: 8px; }
+        .register-container h2 { margin-bottom: 20px; }
+        .register-container label { display: block; margin-top: 10px; }
+        .register-container input { width: 100%; padding: 8px; margin-top: 4px; border: 1px solid #ccc; border-radius: 4px; }
+        .register-container button { margin-top: 16px; padding: 8px 16px; border: none; background: #007bff; color: #fff; border-radius: 4px; cursor: pointer; }
+        .register-container button:hover { background: #0056b3; }
+    </style>
+</head>
+<body>
+    <div class="register-container">
+        <h2>Register</h2>
+        <form method="POST" action="/register">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Register</button>
+        </form>
+        <div style="margin-top:10px;">
+            <a href="/login">Login</a>
+        </div>
+    </div>
+</body>
+</html>
