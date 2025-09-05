@@ -15,7 +15,8 @@
 |-------------|--------------------------------------------|-----------|------------------|
 | id          | An identifier for the message.             | Number    | System Generated |
 | senderid    | The ID for the sender.                     | Number    | System Generated |
-| recipientid | The ID of the recipient (user or channel). | Number    | System Generated |
+| channelid   | The iD for the recipient channel (a)       | Number    | System Generated |
+| recipientid | The ID of the recipient user     (b)       | Number    | System Generated |
 | datetime    | The date and time the message was sent.    | Text      | System Generated |
 | content     | The raw content of the message.            | Text      | User Input       |
 
